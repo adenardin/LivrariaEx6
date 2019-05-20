@@ -5,17 +5,26 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 
-import br.edu.qi.dto.Livro;
+import br.edu.qi.dto.Carro;
 
 @WebService
 @SOAPBinding(style = Style.RPC)
-public interface ILivrariaDao {
-	@WebMethod
-	public boolean gravar(Livro livro);
+public interface IConcessionariaDao {
 
 	@WebMethod
-	public boolean vender(int isbn);
+	public boolean gravar(
+		String 	nome,
+		String 	marca, 
+		String 	modelo, 
+		String 	placa, 
+		float 	preco,
+		String	montadora,
+		String 	status
+	);
 
 	@WebMethod
-	public Livro consultar(Livro livroint, String autor);
+	public boolean vender(String placa);
+
+	@WebMethod
+	public void consultar(String consulta);
 }

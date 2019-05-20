@@ -1,10 +1,10 @@
 package br.edu.qi.service;
 
 import javax.xml.ws.Endpoint;
-import br.edu.qi.service.LivrariaWs;
+import br.edu.qi.service.ConcessionariaWs;
 
-public class LivrariaPublisher {
+public class ConcessionariaPublisher {
 	public static void main(String[] args) {
-		Endpoint.publish("http://localhost:8080/bibliotecaWS", new LivrariaWs());
+		Endpoint.publish("http://localhost:8080/concessionariaWS", new ConcessionariaWs());
 	}
 }

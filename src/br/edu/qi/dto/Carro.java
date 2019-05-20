@@ -1,81 +1,78 @@
 package br.edu.qi.dto;
 
-public class Livro {
-	
-	private String titulo;
-	private int isbn;
-	private String genero;
-	private Integer dataEdicao;
-	private String editora;
-	private String autor;
-	private Float preco;
-	private String status;		
-		
-	public Livro() {
+public class Carro {
+
+	private String nome;
+	private String marca;
+	private String modelo;
+	private String placa;
+	private float preco;
+	private String montadora;
+	private String status;
+
+	public Carro(String nome, String marca, String modelo, String placa, float preco, String montadora, String status) {
+		this.nome = nome;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.placa = placa;
+		this.preco = preco;
+		this.montadora = montadora;
+		this.status = status;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public int getIsbn() {
-		return isbn;
+	public String getMarca() {
+		return marca;
 	}
 
-	public void setIsbn(int isbn) {
-		this.isbn = isbn;
+	public void setMarca(String marca) {
+		this.marca = marca;
 	}
 
-	public String getGenero() {
-		return genero;
+	public String getModelo() {
+		return modelo;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 
-	public Integer getDataEdicao() {
-		return dataEdicao;
+	public String getPlaca() {
+		return placa;
 	}
 
-	public void setDataEdicao(Integer dataEdicao) {
-		this.dataEdicao = dataEdicao;
+	public void setPlaca(String placa) {
+		this.placa = placa;
 	}
 
-	public String getEditora() {
-		return editora;
-	}
-
-	public void setEditora(String editora) {
-		this.editora = editora;
-	}
-
-	public String getAutor() {
-		return autor;
-	}
-
-	public void setAutor(String autor) {
-		this.autor = autor;
-	} 
-	
-	public Float getPreco() {
+	public float getPreco() {
 		return preco;
 	}
 
-	public void setPreco(Float preco) {
+	public void setPreco(float preco) {
 		this.preco = preco;
 	}
-	
+
+	public String getMontadora() {
+		return montadora;
+	}
+
+	public void setMontadora(String montadora) {
+		this.montadora = montadora;
+	}
+
 	public String getStatus() {
 		return status;
 	}
 
 	public void setStatus(String status) {
 		this.status = status;
-	} 	
-	
+	}
 }
